@@ -1,13 +1,18 @@
-# Sample Hardhat Project
+# Sample Hardhat-Tenderly integration Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a basic `hardhat-tenderly` use case.
 
-Try running some of the following tasks:
-
+Usage steps:
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npm i
+```
+After all dependencies are installed, add your Tenderly credentials to `hardhat.config.js`:
+```
+url:
+username:
+project:
+```
+After that, run:
+```shell
+npx hardhat run scripts/deploy.js --network tenderly 
 ```
