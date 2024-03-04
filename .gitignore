@@ -5,7 +5,7 @@ node_modules
 /cache
 /artifacts
 deployments
-.idea
+.idea/
 
 # TypeChain files
 /typechain
